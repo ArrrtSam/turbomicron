@@ -46,7 +46,8 @@
   .sub {
     position: relative;
     a {
-      padding-right: 20px;
+      display: flex;
+      justify-content: space-between;
     }
   }
  
@@ -59,9 +60,8 @@
 
 .menu_toggle{
     display: inline-block;
-    position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     margin: 0;
     vertical-align: text-bottom;
     padding: 0;
@@ -77,10 +77,8 @@
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg);
-      position: absolute;
       transition: all 0.5s ease;
-      left: -13px;
-      top: 10px;
     }
+    margin-top: -5px;
   }
 }
