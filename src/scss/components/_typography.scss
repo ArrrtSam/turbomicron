@@ -354,8 +354,8 @@ h2{
 .red{
   color: rgb(255, 0, 0);
 }
-.top-section_name{
-  font-weight: 400;
+.top-section-name{
+  font-weight: 100;
   font-size: 30px;
   line-height: 34px;
   color: #fff;
@@ -463,6 +463,18 @@ h2{
   }
   .green{
     color: #93ca44;
+  }
+}
+.subpage-title{
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: #262626;
+    font-weight: 600;
+    font-size: 20px;
+    &:hover{
+      color: #92c944;
+    }
   }
 }
 
