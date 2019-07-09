@@ -70,7 +70,7 @@
       background: rgba(0,0,0,0.2) !important;
     }
   }
-.captcha-btn{
+.btn{
   cursor: pointer;
   color: #fff;
   background: #92c944;
@@ -88,4 +88,7 @@
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  &:hover{
+    background: #67c927;
+  }
 }

@@ -1,0 +1,36 @@
+.top-section_breadcrumbs{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+.top-section_list{
+  display: flex;
+  padding: 3px 0;
+}
+.list_item{
+  position: relative;
+  a{
+    font-size: 14px;
+    color: #999;
+  }
+}
+.list_item:not(:last-child){
+    margin-right: 22px;
+    a{
+      color: #92c944;
+    }
+    &::after{
+    content: '';
+    display: flex;
+    width: 5px;
+    height: 5px;
+    background: #92c944;
+    position: absolute;
+    right: -14px;
+    top: 10px;
+    transform: rotate(45deg);
+  }
+}
