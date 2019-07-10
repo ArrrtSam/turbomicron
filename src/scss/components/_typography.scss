@@ -352,7 +352,7 @@ h2{
   }
 }
 .red{
-  color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0) !important;
 }
 .top-section-name{
   font-weight: 100;
@@ -566,5 +566,12 @@ h4{
     color: #262626;
     line-height: 26px;
     margin: 0 0 20px 0;
+  }
+}
+.catalog-block{
+  p{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 25px;
   }
 }  
