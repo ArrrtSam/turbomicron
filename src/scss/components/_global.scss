@@ -84,7 +84,7 @@ a, button, input[type='button'], input[type='submit'] {
   }
 }
 .benefits{
-  padding: 60px 0px 40px 0px;
+  padding: 20px 0px 40px 0px;
   background-color: #f9fafb;
 }
 .image_wrap{
@@ -137,9 +137,6 @@ a, button, input[type='button'], input[type='submit'] {
   padding: 40px 0;
   &-carousel{
     margin-top: 10px;
-    img{
-      height: 200px;
-    }
   }
   .text-icon{
     width: 100%;
@@ -403,7 +400,6 @@ a, button, input[type='button'], input[type='submit'] {
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 0 20px;
     color: #fff;
     font-size: 24px;
     text-align: center;
@@ -594,6 +590,79 @@ a, button, input[type='button'], input[type='submit'] {
         img{
           width: 100%;
         }
+      }
+    }
+  }
+}
+.sto-description{
+  padding-bottom: 20px;
+  img{
+    height: auto;
+    width: 100%
+  }
+}
+.sto-why-turbomicron{
+  .icon-text-item{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    @media screen and (min-width: $large-devices) {
+      width: 30%;
+    }
+  }
+}
+.sto-turbin-replace{
+  .flex-text-item{
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (min-width: $medium-devices) {
+      width: 70%;
+      margin-bottom: 0px;
+    }
+  }
+  .flex-img-item{
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (min-width: $medium-devices) {
+      width: 20%;
+      margin-bottom: 0;
+    }
+    img{
+      height: auto;
+      width: 100%;
+      @media screen and (min-width: $medium-devices) {
+        height: 231px;
+        width: 234px;
+      }
+    }
+  }
+  .diagnostics-btn{
+    padding: 25px 0;
+    text-align: center;
+  }
+}
+.sto-features{
+  .flex-text-item{
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (min-width: $medium-devices) {
+      width: 73%;
+      margin-bottom: 0;
+    }
+  }
+  .flex-img-item{
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (min-width: $medium-devices) {
+      width: 25%;
+      margin-bottom: 0;
+    }
+    img{
+      height: auto;
+      width: 100%;
+      @media screen and (min-width: $medium-devices) {
+        height: 231px;
+        width: 289px;
       }
     }
   }

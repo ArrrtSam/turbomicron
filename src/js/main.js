@@ -33,7 +33,7 @@ $('.menu_toggle').click(function(e){
   e.preventDefault();
   $(this).parent().siblings(".dropdown").slideToggle();
 });
-$('.captcha-btn').click(function(e){
+$('.btn').click(function(e){
   e.preventDefault();
 });
 $('.map-img').click(function(e){
