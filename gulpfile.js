@@ -5,9 +5,12 @@ const sourcemaps = require("gulp-sourcemaps");
 const cleanCSS = require("gulp-clean-css");
 const uglify = require("gulp-uglify");
 const rename = require("gulp-rename");
+const concat = require('gulp-concat');
 const del = require("delete");
 
 sass.compiler = require("node-sass");
+
+var arrayJs = ["./src/vendor/jquery.min.js", "./src/vendor/jquery.mask.min.js", "./src/vendor/slick.min.js", "./src/vendor/lightgallery.min.js", "./src/vendor/lg-fullscreen.min.js"]
 
 gulp.task("serve", () => {
   browserSync.init({
@@ -17,9 +20,10 @@ gulp.task("serve", () => {
   });
   gulp.watch("./src/scss/**/*.scss", gulp.series("scss"));
   gulp.watch("./src/js/**/*.js", gulp.series("js"));
-  gulp.watch("./src/libs/**/*", gulp.series("copyLibs"));
+  gulp.watch("./src/vendor/**/*", gulp.series("vendorCss"));
   gulp.watch("./src/fonts/**/*", gulp.series("copyFonts"));
   gulp.watch("./src/img/**/*", gulp.series("copyImg"));
+  gulp.watch("./src/vendor/*.js", gulp.series("vendor"));
   gulp.watch("./src/videos/**/*,", gulp.series("copyVideos"));
   gulp.watch("./*.html").on("change", browserSync.reload);
 });
@@ -54,6 +58,12 @@ gulp.task("js", () => {
     .pipe(gulp.dest("./dist/js"))
     .pipe(browserSync.stream());
 });
+gulp.task('vendor', () => {  
+  return gulp
+      .src(arrayJs)
+      .pipe(concat('vendor.js'))
+      .pipe(gulp.dest('./dist/vendor.js'))
+});
 
 gulp.task("copyImg", () => {
   return gulp
@@ -61,10 +71,10 @@ gulp.task("copyImg", () => {
     .pipe(gulp.dest("./dist/img"));
 });
 
-gulp.task("copyLibs", () => {
+gulp.task("vendorCss", () => {
   return gulp
-    .src("./src/libs/**/*")
-    .pipe(gulp.dest("./dist/libs"));
+    .src("./src/vendor/*.css")
+    .pipe(gulp.dest("./dist/vendorCss"));
 });
 gulp.task("copyFonts", () => {
   return gulp
@@ -81,5 +91,5 @@ gulp.task("cleanDist", () => {
   return del(["./dist/**/*"]);
 });
 
-gulp.task("default", gulp.series(["scss", "js", "copyImg","copyFonts", "copyVideos", "copyLibs", "serve"]));
-gulp.task("build", gulp.series("cleanDist", "scss", "js","copyFonts", "copyVideos", "copyLibs", "copyImg"));
+gulp.task("default", gulp.series(["scss", "js", "copyImg","copyFonts", "copyVideos", "vendorCss","vendor", "serve"]));
+gulp.task("build", gulp.series("cleanDist", "scss", "js","copyFonts", "copyVideos", "vendorCss","vendor", "copyImg"));
