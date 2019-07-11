@@ -54,6 +54,9 @@ input[type='text']:focus, input[type='password']:focus, input[type='email']:focu
 textarea{
   resize: none;
 }
+.bg-grey{
+  background-color: #f9fafb;
+}
 .main-promo{
   overflow: hidden;
   height: 270px;
@@ -531,8 +534,8 @@ textarea{
       height: auto;
       width: 100%;
       @media screen and (min-width: $medium-devices) {
-        height: 200px;
-        width: 360px;
+        height: initial;
+        width: initial;
       }
     }
     
@@ -877,6 +880,54 @@ textarea{
     }
     p{
       margin: 15px 0;
+    }
+  }
+}
+.recover-special-equipment{
+  padding: 20px 0 40px 0;
+  img{
+    height: auto;
+    width: 100%;
+    @media screen and (min-width: $medium-devices) {
+      height: initial;
+      width: initial;
+    }
+  }
+}
+.cuality-text{
+  width: 100%;
+  margin-bottom: 20px;
+  @media screen and (min-width: $medium-devices) {
+    width: 40%;
+    margin-bottom: 0;
+  }
+}
+.cuality-carousel-block{
+  width: 100%;
+  margin-bottom: 20px;
+  @media screen and (min-width: $medium-devices) {
+    width: 55%;
+    margin-bottom: 0;
+  }
+}
+.crash-reason-special{
+  padding-bottom: 40px;
+  .flex-item-3{
+    width: 100%;
+    margin-bottom: 15px;
+    @media screen and (min-width: $medium-devices) {
+      width: 30%;
+      margin-bottom: 0;
+    }
+    
+
+    img{
+      height: auto;
+      width: 100%;
+      @media screen and (min-width: $medium-devices) {
+        height: initial;
+        width: initial;
+      }
     }
   }
 }

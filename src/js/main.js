@@ -78,6 +78,13 @@ $('.exploitation-carousel').slick({
   autoplaySpeed: 2000,
   speed: 1500
 });
+$(".cuality-carousel").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  speed: 1500
+});
 
 $('#phone').mask('+38(000) 000-00-00');
 $('.our_works_album').lightGallery();
