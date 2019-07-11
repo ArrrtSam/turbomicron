@@ -386,7 +386,7 @@ h2{
   }
 }
 .bold{
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .free-consult{
   h3{
@@ -574,4 +574,103 @@ h4{
     text-align: center;
     padding-bottom: 25px;
   }
-}  
+} 
+.text-center{
+  text-align: center;
+}
+.reviews-block{
+  p{
+    margin-bottom: 50px;
+  }
+  .reviews-list-item{
+    margin-bottom: 60px;
+    .reviews-list-text{
+      position: relative;
+      padding: 0 50px;
+      font-style: italic;
+      @media screen and (min-width: $medium-devices) {
+        padding: 0 40px;
+      }
+      p{        
+        text-align: left;
+        margin: 10px 0;
+      }
+      i{
+        font-style: italic;
+      }
+      i.fa-quote-left{
+        position: absolute;
+        display: inline-block;
+        color: #999;
+        font-size: 30px;
+        font-weight: 800;
+        left: 5px;
+        top: 0;
+        @media screen and (min-width: $medium-devices) {
+          left: 0;
+        }
+      }
+      i.fa-quote-right{
+        position: absolute;
+        display: inline-block;
+        color: #999;
+        font-size: 30px;
+        font-weight: 800;
+        right: 5px;
+        bottom: 0;
+        @media screen and (min-width: $medium-devices) {
+          right: 0;
+        }
+      }
+    }
+    .reviews-list-author{
+      padding-left: 50px;
+      font-weight: 800;
+      font-size: 24px;
+      color: #92c944;
+      text-align: left;
+    }
+  }
+}
+.calltous{
+  .contact-p{
+    font-weight: 400;
+    span{
+      color: #262626;
+    }
+  }
+  h5{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+.feedback-section{
+  .callback-form{
+    p{
+      color: #262626;
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+  }
+  .other-contacts{
+    margin-top: 40px;
+    text-align: left;
+    color: #262626;
+    font-size: 16px;
+    dt{
+      float: left;
+      width: 80px;
+      font-weight: 600;
+    }
+    dd{
+      margin-bottom: 10px;
+      a{
+        color: #92c944;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
