@@ -8,6 +8,28 @@
       display: none;
     }
   }
+  #hamburger-btn-catalog {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 8px 8px 3px 8px;
+    margin: 10px 0px 10px -7px;
+    border-radius: 6px;
+    background: #92c944;
+    @media screen and (min-width: $large-devices) {
+      display: none;
+    }
+  } 
+  #search-btn{
+    width: 100%;
+    @media screen and (min-width: $medium-devices) {
+      width: 10%;
+    }
+    @media screen and (min-width: $large-devices) {
+      width: 8%;
+    }
+  }
   .slick-prev{
     padding: 12px 21px 22px 10px;
     position: absolute;

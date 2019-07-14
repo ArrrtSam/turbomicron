@@ -385,6 +385,9 @@ h2{
    color: #92c944;
   }
 }
+.extra-bold{
+  font-weight: 800 !important;
+}
 .bold{
   font-weight: 700 !important;
 }
@@ -722,4 +725,187 @@ h4{
     margin-bottom: 30px;
   }
   
+}
+.buy-catridge{
+  text-align: center;
+  .red{
+    color: #df3c22;
+  }
+  h3{
+    margin-bottom: 20px;
+  }
+}
+.text-left{
+  text-align: left;
+}
+.buy-catridge-for-brands{
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
+}
+.about-cartridge{
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
+}
+.how-we-change-catridge{
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
+  
+  }
+  
+  .repair-kiev{
+    h2{
+      font-size: 26px;
+      line-height: 1.1em; 
+    }
+  }
+  .turbine-sales{
+    h2{
+      font-size: 26px;
+      line-height: 1.1em; 
+    }
+  }
+  .search-prompt{
+    font-size: 13px;
+    color: #787878;
+    display: block;
+    position: relative;
+    line-height: 16px;
+    &:before {
+      content: "* ";
+      color: #f20303;
+    }
+}
+ol{
+  padding: 0 0 0 25px;
+  counter-reset: counter
+}
+ol>li{
+  counter-increment: counter;
+  position: relative;
+  line-height: 30px;
+}
+ol>li::before{
+  content: counter(counter);
+  position: absolute;
+  left: -18px;
+  top: 0;
+  display: inline-block;
+  color: #92c944;
+  font-size: 18px;
+  font-weight: 800;
+  }
+.group-seo-text{
+  padding-bottom: 20px;
+  p {
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+    text-align: justify;
+  }
+  li{
+    font-size: 16px;
+    color: #262626;
+  }
+  h2{
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  ul{
+    padding: 0 0 0 25px;
+    li{
+      position: relative;
+      line-height: 26px;
+      &::before{
+        content: '';
+        position: absolute;
+        left: -18px;
+        top: 12px;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 2px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        background: #92c944;
+      }
+    }
+  }
+}
+.delivery-content{
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
+}
+.price-car-block{
+  h3{
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
+}
+.bolder-h2{
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+}
+.light{
+  font-weight: 400;
+  color: #262626 !important;
+}
+.repair-car-block{
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
+  .icon-item{
+    display: flex;
+    margin-bottom: 10px;
+    em{
+      display: inline-block;
+      font-size: 50px;
+      color: #92c944;
+      margin-right: 20px;
+    }
+  }
+}  
+.pdf{
+  a{
+    color: #92c944;
+    position: relative;
+    top: 10px;
+  }
+}
+.book-btn{
+  text-align: center;
+}
+.repair-terms-block{
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
 }

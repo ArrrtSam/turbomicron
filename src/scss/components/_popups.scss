@@ -82,3 +82,127 @@
     margin-top: -5px;
   }
 }
+#fixed-right {
+  position: fixed;
+  right: 0;
+  width: 180px;
+  top: 200px;
+  z-index: 15;
+  transition: all 0.5s ease;
+  .right-wrap, .phones-wrap {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .right-wrap{
+    background: rgba(255,255,255,0.5);
+    padding: 2px 0 2px 2px;
+    border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    box-shadow: 0 0 5px #999;
+    ul{
+      padding: 7px;
+      margin: 0 0 2px 0;
+      background: #92c944;
+      border-radius: 3px 0 0 0;
+      -moz-border-radius: 3px 0 0 0;
+      -webkit-border-radius: 3px 0 0 0;
+      transition: all 0.5s ease;
+      li{
+        display: block;
+        text-align: center;
+        margin: 3px 0;
+        a{
+          color: #fff;
+          font-size: 20px;
+          text-decoration: none;
+          font-weight: 800;
+          transition: all 0.5s ease;
+          span{
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    &>a{
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      position: relative;
+      padding-left: 41px;
+      width: 100%;
+      box-sizing: border-box;
+      background: #fff;
+      color: #262626;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 3px 0 0 3px;
+      -moz-border-radius: 3px 0 0 3px;
+      -webkit-border-radius: 3px 0 0 3px;
+      i{
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        font-size: 18px;
+        background: #92c944;
+        border-radius: 3px 0 0 3px;
+        -moz-border-radius: 3px 0 0 3px;
+        -webkit-border-radius: 3px 0 0 3px;
+      }
+      span{
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+  
+}
+.toggle-fixed-right{
+  display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 3px;
+    top: 3px;
+    cursor: pointer;
+    z-index: 15;
+  em{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid #fff;
+    border-right: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    position: relative;
+    left: 6px;
+    top: -6px;
+  }  
+}
+.toggled{
+  right: -150px !important;
+  .toggle-fixed-right{
+    em{
+      border-right: 5px solid #fff;
+      border-left: 0;
+      left: 5px;
+    }
+  }
+  .right-wrap{
+    ul{
+      padding-left: 30px !important;
+      li{
+        a{
+          font-size: 17px !important;
+        }
+      }
+    }
+  }
+}
