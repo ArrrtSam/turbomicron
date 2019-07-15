@@ -909,3 +909,36 @@ ol>li::before{
     margin: 0 0 20px 0;
   }
 }
+.article-text{
+  h2{
+    font-weight: 800;
+    font-size: 24px;
+    text-align: left;
+  }
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
+  ul{
+    padding-left: 40px;
+    margin-bottom: 20px;
+    li{
+      line-height: 26px;
+    }
+  }
+}
+.social span{
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+  color: #262626;
+  font-size: 16px
+}
+.article-right{
+  h2{
+    text-align: left;
+    font-size: 24px;
+  }
+}
