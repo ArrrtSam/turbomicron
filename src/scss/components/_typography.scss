@@ -942,3 +942,28 @@ ol>li::before{
     font-size: 24px;
   }
 }
+.check-list{
+  padding: 0 0 0 25px;
+  li{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 5px;
+    i{
+      display: inline-block;
+      font-weight: 800;
+      color: #92c944;
+      position: absolute;
+      left: 0;
+      top: 4px;
+      background: 0;
+    }
+  }
+}
+.tnvd{
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
+}

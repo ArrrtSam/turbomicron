@@ -1559,3 +1559,55 @@ textarea{
     }
   }
 }
+.tnvd-recover-purpose{
+  padding: 20px 0;
+}
+.tnvd-Commonrail-BOSCH-CP4{
+  padding-bottom: 40px;
+}
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+  background: #fff;
+  color: #262626;
+  border-spacing: 0;
+  @media screen and (min-width: $medium-devices) {
+    font-size: 15px;
+  }
+  th {
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+    vertical-align: middle;
+    background: #bdbdbd;
+    color: #fff;
+    border: 1px solid #bdbdbd;
+    height: 45px;
+    padding: 4px;
+    @media screen and (min-width: $medium-devices) {
+      padding: 10px;
+    }
+}
+  td {
+  padding: 10px 0;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  line-height: 15px;
+  vertical-align: middle;
+  @media screen and (min-width: $medium-devices) {
+    padding: 15px 10px 12px;
+    }
+  }
+  
+}
+.tnvd{
+  padding-bottom: 40px;
+  img{
+    height: auto;
+    width: 100%;
+  }
+}
+.tnvd-crash-reasons{
+  padding-bottom: 40px;
+}
