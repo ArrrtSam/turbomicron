@@ -1771,3 +1771,22 @@ textarea{
     }
   }
 }
+.toast {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 25px;
+  background: #000;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.toast.success {
+  background: #67c927;
+}
+.toast.error {
+  background: #ff0000;
+}

@@ -171,3 +171,42 @@ $('.relation-carousel').slick({
     }
   ]
 });
+// Toast
+$(document).ready(function() {
+  setTimeout(() => {
+    $('.toast').fadeOut(1000)
+  }, 3000)
+  })
+  
+  
+  // AJAX form
+  $(document).ready(function() {
+    $('form').submit(function() {
+      const method = $(this).attr('method')
+      const data = $(this).serialize().replace('g-recaptcha-response', 'captcha')
+      let action = null
+  
+      console.log(data)
+  
+      if (method.toLocaleUpperCase() == 'POST') {
+        action = $.post
+      } else if (method.toLocaleUpperCase() == 'GET') {
+        action = $.get
+      }
+  
+      action($(this).attr('action'), $(this).serialize())
+        .done(res => {
+          $('body').append(`<div class="toast ${res.class}">${res.message}</div>`)
+          $(this)[0].reset()
+          setTimeout(() => {
+            $('.toast').fadeOut(1000)
+            setTimeout(() => {
+              $('.toast').remove()
+            }, 1000)
+          }, 3000)
+        })
+  
+      return false
+    })
+  })
+  
