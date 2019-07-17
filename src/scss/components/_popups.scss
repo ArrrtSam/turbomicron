@@ -8,6 +8,7 @@
   padding-top: 30px;
   z-index: 101;
   transition: all 0.5s ease;
+  overflow:scroll;
 }
 .menu-active {
   left: 0 !important;
@@ -41,47 +42,13 @@
       font-size: 28px;
       font-weight: 700;
       text-decoration: none;
+      &:hover{
+        color: #92c944;
+      }
     }
-  }
-  .sub {
-    position: relative;
-    a {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
- 
-  .sub > ul {
-    display: none;
-    margin: 0;
-    padding: 0 0 0 20px;
   }
   
 
-.menu_toggle{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin: 0;
-    vertical-align: text-bottom;
-    padding: 0;
-    &::after{
-      content: '';
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-right: 3px solid #fff;
-      border-bottom: 3px solid #fff;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      transition: all 0.5s ease;
-    }
-    margin-top: -5px;
-  }
-}
 #fixed-right {
   position: fixed;
   right: 0;
@@ -205,4 +172,5 @@
       }
     }
   }
+}
 }
