@@ -24,12 +24,22 @@ $('#hamburger-btn').click(function(e) {
 });
 $('#menu-shadow').click(function(){
   if ($(this).hasClass('shadow-active')){
-    $(this).removeClass("shadow-active")
-    $("#hamburger-btn").removeClass("is-active")
+    $(this).fadeOut(200).removeClass('shadow-active')
+    $('#hamburger-btn').removeClass('is-active')
     $('#mobile_menu').removeClass("menu-active")
+    $('.callback-modal').fadeOut().removeClass('callback-modal-active')
   }
 });
-
+$('.toggle-callback-modal').click(function(e){
+  e.preventDefault();
+  $('.callback-modal').fadeIn().addClass('callback-modal-active')
+  $('#menu-shadow').fadeIn().addClass('shadow-active')
+});
+$('.modal-close').click(function(e){
+  e.preventDefault();
+  $('.callback-modal').fadeOut().removeClass('callback-modal-active')
+  $('#menu-shadow').fadeOut(200).removeClass('shadow-active')
+});
 $('#hamburger-btn-catalog').click(function(e) {
   e.preventDefault();
   $('.catalog-nav').slideToggle();
@@ -173,18 +183,18 @@ $('.relation-carousel').slick({
 });
 // Toast
 $(document).ready(function() {
-  setTimeout(() => {
+  setTimeout( function() {
     $('.toast').fadeOut(1000)
   }, 3000)
-  })
+  });
   
   
   // AJAX form
   $(document).ready(function() {
     $('form').submit(function() {
-      const method = $(this).attr('method')
-      const data = $(this).serialize().replace('g-recaptcha-response', 'captcha')
-      let action = null
+      var method = $(this).attr('method');
+      var data = $(this).serialize().replace('g-recaptcha-response', 'captcha');
+      var action = null;
   
       console.log(data)
   
@@ -195,12 +205,12 @@ $(document).ready(function() {
       }
   
       action($(this).attr('action'), $(this).serialize())
-        .done(res => {
-          $('body').append(`<div class="toast ${res.class}">${res.message}</div>`)
+        .done(function(res) {
+          $('body').append('<div class="toast ${res.class}">${res.message}</div>')
           $(this)[0].reset()
-          setTimeout(() => {
+          setTimeout(function() {
             $('.toast').fadeOut(1000)
-            setTimeout(() => {
+            setTimeout(function() {
               $('.toast').remove()
             }, 1000)
           }, 3000)

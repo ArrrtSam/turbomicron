@@ -8,6 +8,9 @@
 }
 .top-section_list{
   padding: 3px 0;
+  &:last-child{
+   color: #999;
+  }
 }
 .list_item{
   position: relative;
