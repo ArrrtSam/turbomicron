@@ -55,9 +55,6 @@ $('.menu_toggle').click(function(e){
   e.preventDefault();
   $(this).parent().siblings(".dropdown").slideToggle();
 });
-$('.btn').click(function(e){
-  e.preventDefault();
-});
 $('.map-img').click(function(e){
   e.preventDefault();
   $('.map-block').addClass('dn');
@@ -181,42 +178,42 @@ $('.relation-carousel').slick({
     }
   ]
 });
+
 // Toast
 $(document).ready(function() {
-  setTimeout( function() {
-    $('.toast').fadeOut(1000)
-  }, 3000)
-  });
-  
-  
-  // AJAX form
-  $(document).ready(function() {
-    $('form').submit(function() {
-      var method = $(this).attr('method');
-      var data = $(this).serialize().replace('g-recaptcha-response', 'captcha');
-      var action = null;
-  
-      console.log(data)
-  
-      if (method.toLocaleUpperCase() == 'POST') {
-        action = $.post
-      } else if (method.toLocaleUpperCase() == 'GET') {
-        action = $.get
-      }
-  
-      action($(this).attr('action'), $(this).serialize())
-        .done(function(res) {
-          $('body').append('<div class="toast ${res.class}">${res.message}</div>')
-          $(this)[0].reset()
+  setTimeout(function() {
+    $('.toast').fadeOut(1000);
+  }, 3000);
+});
+
+
+// AJAX form
+$(document).ready(function() {
+  $('form').submit(function() {
+    var form = this;
+    var method = $(form).attr('method');
+    var data = $(form).serialize().replace('g-recaptcha-response', 'captcha');
+    var action = null;
+
+    if (method.toLocaleUpperCase() == 'POST') {
+      action = $.post;
+    } else if (method.toLocaleUpperCase() == 'GET') {
+      action = $.get;
+    }
+
+    action($(form).attr('action'), $(form).serialize())
+      .done(function(res) {
+        $('body').append('<div class="toast ' + res.class + '">' + res.message + '</div>');
+        $(form)[0].reset();
+        setTimeout(function() {
+          $('.toast').fadeOut(1000);
           setTimeout(function() {
-            $('.toast').fadeOut(1000)
-            setTimeout(function() {
-              $('.toast').remove()
-            }, 1000)
-          }, 3000)
-        })
-  
-      return false
-    })
-  })
+            $('.toast').remove();
+          }, 1000);
+        }, 3000);
+      });
+
+    return false;
+  });
+});
   

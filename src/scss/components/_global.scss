@@ -1795,3 +1795,287 @@ textarea{
 .toast.error {
   background: #ff0000;
 }
+.cardan-services{
+  padding: 20px 0 40px;
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
+  .cardan-image-block{
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (min-width: $medium-devices) {
+      width: 30%;
+      margin-bottom: 0;
+    }
+    img{
+      height: auto;
+      width: 100%;
+    }
+    .img-cardan-text{
+      width: 100%;
+      padding: 25px;
+      background-color: #92c944;
+      box-sizing: border-box;
+      margin-top: -5px;
+      p{
+        color: #fff;
+        margin: 0;
+      }
+    }
+  }
+  .cardan-list-block{
+    width: 100%;
+    @media screen and (min-width: $medium-devices) {
+      width: 66%;
+    }
+    h2{
+      font-size: 24px;
+      text-align: left;
+      font-weight: 700;
+    }
+    ol{
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width: $medium-devices) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      li{
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        @media screen and (min-width: $medium-devices) {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+.cars-services{
+  padding: 15px;
+  background-color: #f9fafb;
+  border: 1px solid #c5c5c5;
+  box-sizing: border-box;
+  p{
+    font-size: 16px;
+    color: #262626;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  .text-grey {
+    color: #a7a7a7 !important;
+  }
+  .cars-models-list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    h2{
+      font-size: 24px;
+    }
+    li{
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      @media screen and (min-width: $small-devices) {
+        width: 50%;
+      }
+      @media screen and (min-width: $medium-devices) {
+        width: 25%;
+      }
+      h4{
+        font-weight: 700;
+        font-size: 16px;
+        text-align: left;
+      }
+      p{
+        font-size: 16px;
+        color: #262626;
+        line-height: 26px;
+        margin: 0 0 20px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+.about-company{
+  .flex-pos{
+    align-items: center;
+    @media screen and (min-width: $medium-devices) {
+      align-items: initial;
+    }
+  }
+  margin: 40px 0;
+  &-content{
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (min-width: $medium-devices) {
+      width: 78%;
+      margin-bottom: 0;
+    }
+    h2{
+      text-align: left;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    p{
+      font-size: 16px;
+        color: #262626;
+        line-height: 26px;
+        margin: 0 0 20px 0;
+    }
+  }
+  img{
+    width: 80%;
+    @media screen and (min-width: $medium-devices) {
+      width: 15%;
+    }
+  }
+}
+.service-benefits{
+  padding: 40px 0;
+  h2{
+    text-align: left;
+      font-size: 24px;
+      font-weight: 700;
+  }
+  &-list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    li{
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      text-align: center;
+      @media screen and (min-width: $small-devices) {
+        width: 50%;
+      }
+      @media screen and (min-width: $medium-devices) {
+        width: 25%;
+        text-align: left;
+      }
+      .svg-item{
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        @media screen and (min-width: $medium-devices) {
+          justify-content: flex-start;
+        }
+      }
+      span{
+        color: #262626;
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+.mechatronics-device{
+  padding: 30px 0;
+  h2{
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  p{
+    font-size: 16px;
+      color: #262626;
+      line-height: 26px;
+      margin: 0 0 20px 0;
+  }
+  .dsg-block{
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (min-width: $medium-devices) {
+      width: 66%;
+      margin-bottom: 0;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .price-block{
+    width: 100%;
+    padding: 15px;
+    background-color: #92c944;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: min-content;
+    @media screen and (min-width: $medium-devices) {
+      width: 30%;
+    }
+    p, h2{
+      color: #fff;
+    }
+    
+  }
+}
+.price {
+  color: rgb(0, 128, 0);
+}
+.what-repair{
+  
+  h2,h4{
+    font-weight: 700;
+    text-align: left;
+  }
+  h4{
+    font-size: 16px;
+  }
+  p{
+    font-size: 16px;
+      color: #262626;
+      line-height: 26px;
+      margin: 0 0 20px 0;
+  }
+  ul{
+    padding-left: 40px;
+    bottom: 20px;
+    color: #262626;
+  }
+}
+.spare-part-item{
+  display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    h4{
+      width: 100%;
+      text-align: left;
+      font-size: 16px;
+      color: #262626;
+    }
+    img{
+      width: 100%;
+      margin-bottom: 20px;
+      @media screen and (min-width: $medium-devices) {
+        width: 23%;
+        margin: 0 30px 0 0;
+      }
+    }
+    .text{
+      width: 100%;
+      @media screen and (min-width: $medium-devices) {
+        width: 73%;
+      }
+      p{
+        font-size: 16px;
+          color: #262626;
+          line-height: 26px;
+          margin: 0 0 20px 0;
+      }
+      ul{
+        padding-left: 40px;
+        margin-bottom: 20px;
+      }
+    }
+}

@@ -53,12 +53,9 @@ header {
   justify-content: flex-end;
   li {
     display: inline-block;
-    margin: 0 4px;
+    margin: 0 5px;
     height: 25px;
     line-height: 25px;
-    @media screen and (min-width: $extra-large-devices) {
-      margin: 0 10px;
-    }
     a {
       display: inline-block;
       position: relative;
