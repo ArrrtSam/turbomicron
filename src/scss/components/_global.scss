@@ -843,7 +843,6 @@ textarea{
 }
 .review-form{
   padding: 40px 0;
-  background: #f9fafb;
 }
 .review-form-block{
   input[type=text], textarea{
@@ -1549,6 +1548,9 @@ textarea{
         .art-line-img{
           width: 60px;
           img{
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
             vertical-align: top;
           }
         }
