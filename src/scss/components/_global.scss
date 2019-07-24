@@ -2135,6 +2135,12 @@ textarea{
     }
   }
 }
+.dots-list a { 
+  color: #92c944; 
+} 
+.dots-list a:hover { 
+  text-decoration: underline;
+ } 
 .qualitative-result{
   padding: 0 0 40px 0;
   p{
