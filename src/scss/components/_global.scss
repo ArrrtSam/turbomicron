@@ -2144,3 +2144,23 @@ textarea{
     margin: 0 0 20px 0;
   }
 }
+.flex-text-item-70{
+  width: 100%;
+  @media screen and (min-width: $medium-devices) {
+    width: 75%;
+  }
+}
+.flex-img-item-25{
+  width: 100%;
+  @media screen and (min-width: $medium-devices) {
+    width: 25%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    @media screen and (min-width: $medium-devices) { 
+      height: initial;
+      width: initial;
+    }
+  }
+}
