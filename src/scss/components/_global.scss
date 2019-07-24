@@ -1585,16 +1585,19 @@ textarea{
     font-weight: 700;
   }
 }
+.table-wrapper{
+  overflow-x: scroll;
+  @media screen and (min-width: $large-devices) {
+    overflow: hidden;
+  }
+}
 .table{
   width: 100%;
   border-collapse: collapse;
-  font-size: 10px;
+  font-size: 15px;
   background: #fff;
   color: #262626;
   border-spacing: 0;
-  @media screen and (min-width: $medium-devices) {
-    font-size: 15px;
-  }
   th {
     font-weight: bold;
     text-align: center;
@@ -1604,20 +1607,14 @@ textarea{
     color: #fff;
     border: 1px solid #bdbdbd;
     height: 45px;
-    padding: 4px;
-    @media screen and (min-width: $medium-devices) {
-      padding: 10px;
-    }
+    padding: 10px;
 }
   td {
-  padding: 10px 0;
+    padding: 15px 10px 12px;
   border: 1px solid #bdbdbd;
   text-align: center;
   line-height: 15px;
   vertical-align: middle;
-  @media screen and (min-width: $medium-devices) {
-    padding: 15px 10px 12px;
-    }
   }
   
 }
