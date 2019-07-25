@@ -1,8 +1,8 @@
 #mobile_menu{
   position: fixed;
-  left: -380px;
+  left: -600px;
   top: 0;
-  width: 315px;
+  max-width: calc(100% - 40px);
   height: 100%;
   background: #000;
   padding-top: 30px;
